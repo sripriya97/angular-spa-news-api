@@ -1,0 +1,7 @@
+.bookmark-cards{
+    display: flex;
+    flex-flow: wrap;
+}
+h2{
+    font-weight: 450;
+}

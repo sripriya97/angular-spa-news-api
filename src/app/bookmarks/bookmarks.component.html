@@ -1,0 +1,7 @@
+<h2>Your Bookmarks</h2>
+<!--Displayed bookmarked articles-->
+<div class="bookmark-cards">
+    <div *ngFor='let bookmarkedArticle of bookmarksArray'>
+        <app-bookmark-card [news]='bookmarkedArticle'></app-bookmark-card>
+    </div>
+</div>

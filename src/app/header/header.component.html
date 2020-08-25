@@ -1,0 +1,16 @@
+<!--Header-->
+<mat-toolbar color="primary">
+    <img [src]='imageURL' [alt]="imageText">
+    <!--Search Bar-->
+    <input matInput class="search" placeholder="Search " value="Search " #keyword>
+    <span class="material-icons" (click)='searchByKeyword(keyword.value)'>search</span>
+    <!--Icons for profile-->
+    <div class="icons">
+        <!--Go to Dashboard page-->
+        <i class="material-icons" (click)='goToDashboard()'>home</i>
+        <!--Go to login page-->
+        <i class="material-icons" (click)='goToLogin()'>perm_identity</i>
+        <!--Go to bookmarks page-->
+        <i class="material-icons" (click)='goToBookmarks()'>bookmark</i>
+    </div>
+</mat-toolbar>

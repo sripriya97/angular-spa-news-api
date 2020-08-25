@@ -1,0 +1,6 @@
+<!--Displays news by category-->
+<div class="news-cards-display">
+<div *ngFor = 'let newsArticle of newsByCategory'>
+<app-card [news]='newsArticle'></app-card>
+</div>
+</div>

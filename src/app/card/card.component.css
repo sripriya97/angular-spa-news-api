@@ -1,0 +1,28 @@
+.news-card{
+    width: 28vw;
+    height: 76vh;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+}
+img{
+    width: 25vw;
+    height: 25vh;
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+mat-card-title{
+    font-size: 0.1em;
+}
+a{
+    color: white;
+}
+button{
+    height: 6vh;
+    width: 10vw;
+    background-color: rgb(49, 12, 182);
+    border-radius: 0.3em;
+    border: 2px solid rgb(49, 12, 182);
+    
+}

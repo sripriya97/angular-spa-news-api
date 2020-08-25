@@ -1,0 +1,4 @@
+.news-cards-display{
+    display: flex;
+    flex-flow: wrap;
+}

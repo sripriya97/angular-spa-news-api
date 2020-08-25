@@ -1,0 +1,21 @@
+<!--Cards to display news clippings-->
+<mat-card class="news-card">
+    <mat-card-header>
+        <!--Bookmark artile-->
+        <div mat-card-avatar (click)='bookmarkArticle()' class="bookmark">
+            <i class="material-icons">post_add</i>
+        </div>
+        <mat-card-title>{{news.title}}</mat-card-title>
+        <mat-card-subtitle>{{news.author}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="news.urlToImage" alt="Image">
+    <mat-card-content>
+        <p>{{news.description}}</p>
+    </mat-card-content>
+    <!--Link to read full article-->
+    <mat-card-actions>
+        <button mat-button ejs-button cssClass='e-link'>
+            <a [href]="news.url" target='_blank'>Read More..</a>
+        </button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,12 @@
+<!--Dashboard cards-->
+<mat-card class="category-card">
+  <mat-card-header>
+    <mat-card-title>{{category.title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]='category.imageURL' [alt]="category.imageText">
+  <mat-card-content>
+    <p>
+      {{category.description}}
+    </p>
+  </mat-card-content>
+</mat-card>

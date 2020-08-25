@@ -1,0 +1,7 @@
+<h1>Top News Stories</h1>
+<!--Carousel to display categories-->
+<div class="carousel" data-flickity='{ "wrapAround": true }'>
+    <div *ngFor='let myCategory of categoryArray' class="carousel-cell" (click)='goToCategory(myCategory.title)'>
+        <app-category-card [category]='myCategory'></app-category-card>
+    </div>
+</div>

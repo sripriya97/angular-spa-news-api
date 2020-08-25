@@ -1,0 +1,6 @@
+<!--Display searched articles in a card using card component-->
+<div class="search-cards">
+    <div *ngFor='let newsArticle of newsByKeyword'>
+        <app-card [news]='newsArticle'></app-card>
+    </div>
+</div>

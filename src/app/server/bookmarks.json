@@ -1,0 +1,90 @@
+{
+  "user1": [
+    {
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "author": "Sarah Wild",
+      "title": "'Earth breathing': mountain erosion a missing piece in the climate puzzle - Phys.Org",
+      "description": "Mountains release the same amount of carbon each year as volcanoes – about 100 megatons – and yet we know very little about the process. Understanding these emissions could tell us more about their effects on climate, both in the past and the future.",
+      "url": "https://phys.org/news/2020-08-earth-mountain-erosion-piece-climate.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2020/earthbreathi.jpg",
+      "publishedAt": "2020-08-25T14:40:19Z",
+      "content": "Mountains release the same amount of carbon each year as volcanoes about 100 megatons and yet we know very little about the process. Understanding these emissions could tell us more about their effec… [+8236 chars]",
+      "id": 3
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": null,
+      "title": "Listen to Michelle Obama interview Barack in new podcast",
+      "description": "Former First Lady Michelle Obama has launched \"The Michelle Obama Podcast\" on Spotify. In episode one, she features her husband Barack Obama.",
+      "url": "https://www.cnn.com/videos/us/2020/07/29/michelle-obama-barack-obama-spotify-podcast.cnn",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/200729144216-michelle-and-barack-obama-super-tease.jpg",
+      "publishedAt": "2020-07-29T18:48:18Z",
+      "content": "Chat with us in Facebook Messenger. Find out what's happening in the world as it unfolds.",
+      "id": 4
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Shilpa Jamkhandikar",
+      "title": "Modi says coronavirus risk persists in India, recoveries rise - Reuters",
+      "description": "India needs to be \"extra vigilant\" as the novel coronavirus threat persists, Prime Minister Narendra Modi said in a public address on Sunday, even as the country registered a record number of patient recoveries in a day.",
+      "url": "https://www.reuters.com/article/us-health-coronavirus-india-modi-idUSKCN24R0FJ",
+      "urlToImage": "https://s3.reutersmedia.net/resources/r/?m=02&d=20200726&t=2&i=1527166734&w=1200&r=LYNXNPEG6P095",
+      "publishedAt": "2020-07-26T12:53:00Z",
+      "content": "MUMBAI (Reuters) - India needs to be “extra vigilant” as the novel coronavirus threat persists, Prime Minister Narendra Modi said in a public address on Sunday, even as the country registered a recor… [+1642 chars]",
+      "id": 6
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Reuters Editorial",
+      "title": "India's Modi says ready to mass produce COVID-19 vaccine - Reuters",
+      "description": "India is ready to mass produce COVID-19 vaccines to distribute across the country when scientists give the go-ahead to do so, Prime Minister Narendra Modi said in his Independence Day speech on Saturday.",
+      "url": "https://www.reuters.com/article/us-india-independenceday-idUSKCN25B07W",
+      "urlToImage": "https://s3.reutersmedia.net/resources/r/?m=02&d=20200815&t=2&i=1529713821&w=1200&r=LYNXNPEG7E04O",
+      "publishedAt": "2020-08-15T03:42:00Z",
+      "content": "NEW DELHI (Reuters) - India is ready to mass produce COVID-19 vaccines to distribute across the country when scientists give the go-ahead to do so, Prime Minister Narendra Modi said in his Independen… [+340 chars]",
+      "id": 7
+    },
+    {
+      "source": {
+        "id": "the-hindu",
+        "name": "The Hindu"
+      },
+      "author": "Bishwanath Ghosh",
+      "title": "For final year students, uncertainty clouds road to the future",
+      "description": "Anxiety continues to grip them due to tussle between varsities, UGC on holding examinations.",
+      "url": "https://www.thehindu.com/news/national/other-states/for-final-year-students-uncertainty-clouds-road-to-the-future/article32286877.ece",
+      "urlToImage": "https://www.thehindu.com/static/theme/default/base/img/og-image.jpg",
+      "publishedAt": "2020-08-06T13:34:56Z",
+      "content": "Anxiety continues to grip final year/terminal semester students in West Bengal like in many other States as uncertainty clouds their road to the future. \r\nWhile their universities strongly rule out h… [+2397 chars]",
+      "id": 8
+    }
+  ],
+  "user2": [
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Manish Singh",
+      "title": "Apple begins assembling iPhone 11 in India",
+      "description": "Apple’s contract manufacturing partner Foxconn has started to assemble the current generation of iPhone units — the iPhone 11 lineup — in its plant near southern city of Chennai, a source familiar with the matter told TechCrunch. A small batch of locally manu…",
+      "url": "http://techcrunch.com/2020/07/24/apple-begins-assembling-iphone-11-in-india/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/09/iphone-11-IMG_1744.jpg?w=533",
+      "publishedAt": "2020-07-24T11:08:25Z",
+      "content": "Apples contract manufacturing partner Foxconn has started to assemble the current generation of iPhone units — the iPhone 11 lineup — in its plant near southern city of Chennai, a source familiar wit… [+3255 chars]",
+      "id": 2
+    }
+  ]
+}

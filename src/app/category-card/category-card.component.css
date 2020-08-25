@@ -1,0 +1,25 @@
+.category-card {
+    margin-top: 1vh;
+    max-width: 30vw;
+    box-shadow: 0 20px 25px 0 rgba(0,0,0,0.2);
+} 
+img{
+    width: 25vw;
+    height: 40vh;
+}
+button {
+    margin-left: 9vw;
+    background-color: rgb(49, 12, 182);
+    color: white;
+    border-radius: 0.3em;
+    border: 2px solid rgb(49, 12, 182);
+}
+p{
+    text-align: center;
+}
+mat-card-title{
+    margin-left: 6.5vw;
+}
+  
+
+  
