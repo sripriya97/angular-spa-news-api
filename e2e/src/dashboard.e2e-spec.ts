@@ -8,10 +8,6 @@ describe('Dashboard page', () => {
     page.navigateToDashboardPage();
   });
 
-  it('should navigate to dashboard page', () => {
-    expect(page.getPageCurrentUrl()).toContain('/dashboard');
-  });
-
 
   it('should have the correct title', () => {
     expect(page.getPageTitle()).toBe('The Daily News');
