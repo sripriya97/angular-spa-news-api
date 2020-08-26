@@ -5,6 +5,7 @@ import { DashboardComponent } from 'src/app/dashboard/dashboard.component';
 import { BookmarksComponent } from 'src/app/bookmarks/bookmarks.component';
 import { CategoryNewsComponent } from 'src/app/category-news/category-news.component';
 import { SearchNewsComponent } from 'src/app/search-news/search-news.component';
+import { BookmarkRouteGuardGuard } from './bookmark-route-guard.guard';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   },
   {
     path: 'bookmarks',
-    component: BookmarksComponent
+    component: BookmarksComponent,
+    canActivate: [BookmarkRouteGuardGuard]
   },
   {
     path: 'category-news/:category',

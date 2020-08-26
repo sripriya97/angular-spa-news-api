@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
+import { RoutingService } from 'src/app/services/routing.service';
 
 @Injectable({
   providedIn: 'root'
@@ -6,9 +8,10 @@ import { Injectable } from '@angular/core';
 export class AuthenticateService {
 
   public users = [];
-  public username;
+  
 
-  constructor() {
+  //user credentials
+  constructor(private dataService: DataService, private routerService: RoutingService) {
     this.users = [
       {
         username: 'user1',
@@ -32,10 +35,19 @@ export class AuthenticateService {
       //generate random token
       token = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
       //store username
-      this.username = user.username;
-      console.log(`username is ${this.username}`);
+      this.storeUsername(user.username);
     }
     return token;
+  }
+
+  //store username in local storage
+  storeUsername(username) {
+    localStorage.setItem('username', username);
+  }
+
+  //get username from local storage
+  getUsername() {
+    return localStorage.getItem('username');
   }
 
   //store token in local storage
@@ -55,6 +67,11 @@ export class AuthenticateService {
     } else {
       return false;
     }
+  }
+
+  //logout and clear local storage
+  logout(){
+    localStorage.clear();
   }
 
 }

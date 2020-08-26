@@ -7,10 +7,11 @@
     <!--Icons for profile-->
     <div class="icons">
         <!--Go to Dashboard page-->
-        <i class="material-icons" (click)='goToDashboard()'>home</i>
+        <i class="material-icons" name="home" (click)='goToDashboard()'>home</i>
         <!--Go to login page-->
-        <i class="material-icons" (click)='goToLogin()'>perm_identity</i>
+        <i class="material-icons" name="login" (click)='goToLogin()'>perm_identity</i>
         <!--Go to bookmarks page-->
-        <i class="material-icons" (click)='goToBookmarks()'>bookmark</i>
+        <i class="material-icons" name="bookmark" (click)='goToBookmarks()'>bookmark</i>
     </div>
+    <span class="logout" *ngIf='islogin()' (click)='logout()'>Logout</span>
 </mat-toolbar>

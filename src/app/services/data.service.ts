@@ -10,7 +10,8 @@ export class DataService {
 
   //to store bookmarked articles
   public bookmarkedArticles = new BehaviorSubject<any>('');
-  //to store artiles to be displayed
+
+  //to store articles to be displayed
   public displayArticles = new BehaviorSubject<any>('');
 
   constructor() {

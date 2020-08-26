@@ -41,26 +41,30 @@ export class NewsService {
 
   //get all bookmarks
   getAllBookmarks() {
-    this.httpClient.get(`http://localhost:3000/${this.authService.username}`).subscribe(data => {
+    //send get request to server
+    this.httpClient.get(`http://localhost:3000/${this.authService.getUsername()}`).subscribe(data => {
       //updates behaviour subject with bookmarks data
       this.dataService.bookmarkedArticles.next(data);
     }, error => {
       console.log(error.message);
-    })
+    });
   }
 
   //add bookmark
   addBookmark(news: News) {
-    this.httpClient.post(`http://localhost:3000/${this.authService.username}`, news).subscribe(data => {
+    //send post request to server
+    this.httpClient.post(`http://localhost:3000/${this.authService.getUsername()}`, news).subscribe(data => {
       console.log(data);
     });
-    //to update the behaviour subject
+    //to update the bookmarks behaviour subject
     this.getAllBookmarks();
   }
 
   //delete bookmark
   deleteBookmark(newsId) {
-    this.httpClient.delete(`http://localhost:3000/${this.authService.username}/${newsId}`).subscribe(data => {
+    //send delete request to server
+    this.httpClient.delete(`http://localhost:3000/${this.authService.getUsername()}/${newsId}`).subscribe(data => {
+
       //to update the behaviour subject
       this.getAllBookmarks();
     });

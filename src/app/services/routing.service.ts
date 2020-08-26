@@ -29,5 +29,8 @@ export class RoutingService {
     return this.router.navigate(['search-news',keyword]);
   }
   
+  routeToPrevious(){
+    return this.location.back();
+  }
 
 }

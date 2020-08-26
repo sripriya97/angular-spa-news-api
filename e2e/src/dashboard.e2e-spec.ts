@@ -4,11 +4,11 @@ import { browser, logging } from 'protractor';
 describe('Dashboard page', () => {
   let page = new DashboardPage();
 
-  beforeAll(() => {
+  beforeAll(() => { 
     page.navigateToDashboardPage();
   });
 
-  it('should navigate to login page', () => {
+  it('should navigate to dashboard page', () => {
     expect(page.getPageCurrentUrl()).toContain('/dashboard');
   });
 
@@ -22,16 +22,16 @@ describe('Dashboard page', () => {
     expect(page.getHeading1().getText()).toBe('Top News Stories');
   });
 
-  /*it('should have card', () => {
-    expect(page.getCard.isPresent());
+  it('should have card', () => {
+    expect(page.getCard().isDisplayed());
   });
 
 
-  it('should navigate to dashboard on successful login', () => {
+  it('should navigate to category upon clicking card', () => {
     
-    page.getCard.click();
-    expect(page.getPageCurrentUrl()).toContain('/dashboard/comp3');
-  });*/
+    page.getCard().click();
+    expect(page.getPageCurrentUrl()).toContain('/category');
+  });
 
 
 

@@ -9,32 +9,44 @@ import { AuthenticateService } from 'src/app/login-module/authenticate.service';
 })
 export class HeaderComponent implements OnInit {
 
-  isNoteView = true;
+  loggedIn : boolean;
   imageURL = 'assets/news.png';
-  imageText='news icon';
+  imageText = 'news icon';
 
-  constructor(private routerService : RoutingService, private authService: AuthenticateService){}
-  ngOnInit(){}
+  constructor(private routerService: RoutingService, private authService: AuthenticateService) {
+    this.loggedIn = this.authService.isAuthenticated();
+   }
+  ngOnInit() { }
 
-  goToBookmarks(){
+  islogin(){
+    return this.authService.isAuthenticated();
+  }
+
+  goToBookmarks() {
     //go to bookmarks if already logged in, else to login page
-    if(this.authService.isAuthenticated()){
+    if (this.authService.isAuthenticated()) {
       this.routerService.routeToBookmarks();
-    } 
-    else{
+    }
+    else {
       this.routerService.routeToLogin();
     }
   }
-  goToLogin(){
+  goToLogin() {
     //route to login page 
     this.routerService.routeToLogin();
   }
-  goToDashboard(){
+  goToDashboard() {
     //route to dashboard
     this.routerService.routeToDashboard();
   }
-  searchByKeyword(keyword){
+  searchByKeyword(keyword) {
     //search by keyword and go to search news
     this.routerService.routeToSearchNews(keyword);
+  }
+  logout() {
+    //logout
+    this.authService.logout();
+    //route to dashboard
+    this.routerService.routeToDashboard();
   }
 }

@@ -69,6 +69,20 @@
       "publishedAt": "2020-08-06T13:34:56Z",
       "content": "Anxiety continues to grip final year/terminal semester students in West Bengal like in many other States as uncertainty clouds their road to the future. \r\nWhile their universities strongly rule out h… [+2397 chars]",
       "id": 8
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Pikiran-rakyat.com"
+      },
+      "author": "Zaki Islami",
+      "title": "Daftar Rekomendasi HP dengan RAM 6GB, Samsung, Xiaomi, OPPO dan Vivo - Jurnal Arena - Pikiran Rakyat",
+      "description": "Daftar Rekomendasi HP dengan RAM 6GB, Samsung, Xiaomi, OPPO dan Vivo",
+      "url": "https://jurnalarena.pikiran-rakyat.com/timeout/pr-75690552/daftar-rekomendasi-hp-dengan-ram-6gb-samsung-xiaomi-oppo-dan-vivo",
+      "urlToImage": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/750x500/photo/2020/08/09/3591612238.jpg?v=115",
+      "publishedAt": "2020-08-26T04:25:08Z",
+      "content": "JURNAL ARENA - Random Access Memory atau RAM merupakan salah satu komponen terpenting pada sebuah produk gadget seperti HP, selain baterai dan kamera tentunya. \r\nRAM memliki fungsi untuk menyimpan da… [+881 chars]",
+      "id": 10
     }
   ],
   "user2": [
@@ -85,6 +99,48 @@
       "publishedAt": "2020-07-24T11:08:25Z",
       "content": "Apples contract manufacturing partner Foxconn has started to assemble the current generation of iPhone units — the iPhone 11 lineup — in its plant near southern city of Chennai, a source familiar wit… [+3255 chars]",
       "id": 2
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Tom Warren",
+      "title": "President Trump says he will ban TikTok in the US today",
+      "description": "President Trump says he will plan TikTok from operating in the US. The order could come as early as today, but it’s not clear exactly how the Trump administration will ban TikTok.",
+      "url": "https://www.theverge.com/2020/8/1/21350578/tiktok-ban-president-trump-comments-order",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/WoV3fOT4tjDSfEZub5j0Q0nM2fo=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/18331846/acastro_190723_1777_tiktok_0002.0.jpg",
+      "publishedAt": "2020-08-01T09:19:32Z",
+      "content": "Ban could come via an executive order or emergency economic powers\r\nIllustration by Alex Castro / The Verge\r\nPresident Trump has told reporters hes planning to ban TikTok from operating in the US. As… [+1694 chars]",
+      "id": 3
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Christine Fisher",
+      "title": "Twitter hacker was previously caught stealing a fortune in Bitcoin",
+      "description": "Graham Ivan Clark, the 17-year-old “mastermind” behind the massive Twitter breach that compromised high-profile accounts, like those belonging to Joe Biden and Elon Musk, got caught stealing hundreds of thousands of dollars worth of Bitcoins last year. Accord…",
+      "url": "https://www.engadget.com/twitter-hacker-graham-clark-stolen-bitcoin-140234512.html",
+      "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-images%2F2020-01%2Fe1c11890-42df-11ea-9fc7-677060cb72f6&client=amp-blogside-v2&signature=2974a9748770f53801158974991307682915bc05",
+      "publishedAt": "2020-08-03T14:02:34Z",
+      "content": "In April, the Secret Service seized 100 Bitcoins from Clark, NYT reports. Weeks later, Bennett received a letter explaining that the Secret Service had recovered 100 of his Bitcoins. The letter cited… [+884 chars]",
+      "id": 4
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Alexis Akwagyiram",
+      "title": "Nigeria considers using private firms for coronavirus tests after foreign flights resume - Reuters",
+      "description": "Nigeria is considering partnerships between state governments and private firms to ramp up testing and tracing of coronavirus cases after international flights resume this month, the head of the Nigeria Centre for Disease Control (NCDC) said.",
+      "url": "https://www.reuters.com/article/us-health-coronavirus-nigeria-aviation-idUSKBN25G1N6",
+      "urlToImage": "https://s4.reutersmedia.net/resources/r/?m=02&d=20200820&t=2&i=1530356011&w=1200&r=LYNXMPEG7J0XU",
+      "publishedAt": "2020-08-20T14:14:00Z",
+      "content": "LAGOS (Reuters) - Nigeria is considering partnerships between state governments and private firms to ramp up testing and tracing of coronavirus cases after international flights resume this month, th… [+1637 chars]",
+      "id": 5
     }
   ]
 }

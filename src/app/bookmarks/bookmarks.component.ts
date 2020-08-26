@@ -19,7 +19,7 @@ export class BookmarksComponent implements OnInit {
   ngOnInit() {
     //load bookmarksArray with behavior subject data
     this.dataService.bookmarkedArticles.subscribe(data => {
-      this.bookmarksArray = data
+      this.bookmarksArray = data;
     }, error => { console.log(error.message); });
   }
   removeFromBookmark(news) {

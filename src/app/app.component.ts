@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticateService } from 'src/app/login-module/authenticate.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'news-spa';
+
 }

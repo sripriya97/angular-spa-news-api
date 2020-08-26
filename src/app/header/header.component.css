@@ -1,5 +1,5 @@
 .icons {
-	margin-left: 27vw;
+	margin-left: 24vw;
 	cursor: pointer;
 }
 .material-icons{
@@ -24,4 +24,9 @@ img {
 	width: 8vw;
 	margin: 0;
 	margin-left: 0;
+}
+.logout{
+	font-size: 0.9em;
+	margin-bottom: 0.7vh;
+	cursor: pointer;
 }

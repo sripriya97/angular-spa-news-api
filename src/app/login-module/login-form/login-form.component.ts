@@ -18,7 +18,7 @@ export class LoginFormComponent {
   });
 
   constructor(private fb: FormBuilder, private authService : AuthenticateService,
-  private router: Router, private routerService : RoutingService, private location : Location) {}
+   private routerService : RoutingService) {}
 
   onSubmit(user) {
     //authenticate user and store token
@@ -26,10 +26,9 @@ export class LoginFormComponent {
     if (token) {
       this.authService.storeToken(token);
       //route to previous page
-      this.location.back();
+      this.routerService.routeToPrevious();
     } else {
-      //this.routerService.routeToLogin();
-      this.router.navigate(['/login']);
+      this.routerService.routeToLogin();
     }
 
   }
