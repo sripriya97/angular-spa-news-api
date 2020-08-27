@@ -8,9 +8,8 @@ import { RoutingService } from 'src/app/services/routing.service';
 export class AuthenticateService {
 
   public users = [];
-  
 
-  //user credentials
+  // user credentials
   constructor(private dataService: DataService, private routerService: RoutingService) {
     this.users = [
       {
@@ -23,7 +22,7 @@ export class AuthenticateService {
       }
     ];
   }
-  //authenticate user if present in users list
+  // authenticate user if present in users list
   authenticate(user): any {
     let token;
     const foundUser = this.users.find(u =>
@@ -32,35 +31,35 @@ export class AuthenticateService {
     );
 
     if (foundUser) {
-      //generate random token
+      // generate random token
       token = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-      //store username
+      // store username
       this.storeUsername(user.username);
     }
     return token;
   }
 
-  //store username in local storage
+  // store username in local storage
   storeUsername(username) {
     localStorage.setItem('username', username);
   }
 
-  //get username from local storage
+  // get username from local storage
   getUsername() {
     return localStorage.getItem('username');
   }
 
-  //store token in local storage
+  // store token in local storage
   storeToken(token) {
     localStorage.setItem('token', token);
   }
 
-  //get token from local storage
+  // get token from local storage
   getToken() {
     return localStorage.getItem('token');
   }
 
-  //check if user is authenticated
+  // check if user is authenticated
   isAuthenticated() {
     if (this.getToken()) {
       return true;
@@ -69,8 +68,8 @@ export class AuthenticateService {
     }
   }
 
-  //logout and clear local storage
-  logout(){
+  // logout and clear local storage
+  logout() {
     localStorage.clear();
   }
 

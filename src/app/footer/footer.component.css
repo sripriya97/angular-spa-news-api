@@ -1,0 +1,15 @@
+.mat-toolbar{
+    margin-top: 10vh;
+    height: 8vh;
+    margin-bottom: 0vh;
+}
+i{
+    padding: 2vh;
+}
+#copyright{
+    font-size: 0.6em;
+    margin-left: 52vw;
+}
+.connect{
+    font-size: 0.9em;
+}

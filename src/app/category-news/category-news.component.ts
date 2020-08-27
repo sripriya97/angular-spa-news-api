@@ -11,26 +11,24 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class CategoryNewsComponent implements OnInit {
 
-  public newsByCategory : Array<News>;  
+  public newsByCategory: Array<News>;
   public category;
 
-  constructor(private activatedRoute : ActivatedRoute, private newsService : NewsService,
-  private dataService : DataService) { 
-    this.activatedRoute.params.subscribe(data=>{
-      //get category from route parameter
-      this.category=data.category; 
-    })
-    //update behaviour subject by category
-    this.newsService.getAllTopHeadlinesByCategory(this.category); 
+  constructor(private activatedRoute: ActivatedRoute, private newsService: NewsService, private dataService: DataService) {
+    this.activatedRoute.params.subscribe(data => {
+      // get category from route parameter
+      this.category = data.category;
+    });
+    // update behaviour subject by category
+    this.newsService.getAllTopHeadlinesByCategory(this.category);
   }
 
-  ngOnInit() { 
-    this.dataService.displayArticles.subscribe(data=>{
-      this.newsByCategory=data.articles;
-    },error=>{
+  ngOnInit() {
+    this.dataService.displayArticles.subscribe(data => {
+      this.newsByCategory = data.articles;
+    }, error => {
       console.log(error.message);
-      
-    })
+    });
   }
 
 }

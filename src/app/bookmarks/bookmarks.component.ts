@@ -12,18 +12,18 @@ export class BookmarksComponent implements OnInit {
 
   public bookmarksArray: Array<News>;
   constructor(private dataService: DataService, private newsService: NewsService) {
-    //updates behaviour subject with all bookmarked articles
+    // updates behaviour subject with all bookmarked articles
     this.newsService.getAllBookmarks();
    }
 
   ngOnInit() {
-    //load bookmarksArray with behavior subject data
+    // load bookmarksArray with behavior subject data
     this.dataService.bookmarkedArticles.subscribe(data => {
       this.bookmarksArray = data;
     }, error => { console.log(error.message); });
   }
   removeFromBookmark(news) {
-    //remove from bookmark array and refresh behaviour subject
+    // remove from bookmark array and refresh behaviour subject
     this.newsService.deleteBookmark(news);
   }
 

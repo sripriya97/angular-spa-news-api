@@ -10,13 +10,13 @@ import { NewsService } from 'src/app/services/news.service';
 export class BookmarkCardComponent implements OnInit {
 
   @Input() public news: News;
-  constructor(private newsService : NewsService) { }
+  constructor(private newsService: NewsService) { }
 
   ngOnInit() {
   }
 
   removeFromBookmark(news) {
-    //remove from bookmark array and refresh behaviour subject
+    // remove from bookmark array and refresh behaviour subject
     this.newsService.deleteBookmark(news.id);
   }
 

@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
 })
 export class RoutingService {
 
-  constructor(private router : Router, private location : Location) { }
+  constructor(private router: Router, private location: Location) { }
 
   routeToLogin() {
     return this.router.navigate(['login']);
@@ -22,14 +22,14 @@ export class RoutingService {
   }
 
   routeToCategoryNews(category) {
-    return this.router.navigate(['category-news',category]);
+    return this.router.navigate(['category-news', category]);
   }
 
   routeToSearchNews(keyword) {
-    return this.router.navigate(['search-news',keyword]);
+    return this.router.navigate(['search-news', keyword]);
   }
-  
-  routeToPrevious(){
+
+  routeToPrevious() {
     return this.location.back();
   }
 

@@ -13,15 +13,15 @@ export class Header {
   }
 
   public getLoginIcon(): ElementFinder {
-    return element(by.name("login"));
+    return element(by.name('login'));
   }
   public getBookmarkIcon(): ElementFinder {
-    return element(by.name("bookmark"));
+    return element(by.name('bookmark'));
   }
   public getHomeIcon(): ElementFinder {
-    return element(by.name("home"));
+    return element(by.name('home'));
   }
-  public getPageCurrentUrl(){
-  return browser.getCurrentUrl();
+  public getPageCurrentUrl() {
+    return browser.getCurrentUrl();
   }
 }

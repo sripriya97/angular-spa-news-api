@@ -17,7 +17,7 @@ export class DashboardPage {
   public getCard(): ElementFinder {
     return element(by.css('.carousel-cell'));
   }
-  public getPageCurrentUrl(){
- return browser.getCurrentUrl();
+  public getPageCurrentUrl() {
+    return browser.getCurrentUrl();
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Category } from '../category'
+import { Category } from '../category';
 
 @Component({
   selector: 'app-category-card',
@@ -8,10 +8,10 @@ import { Category } from '../category'
 })
 export class CategoryCardComponent implements OnInit {
 
-  @Input() public category : Category;
+  @Input() public category: Category;
   constructor() { }
 
   ngOnInit() {
   }
-  
+
 }

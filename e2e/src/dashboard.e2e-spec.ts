@@ -2,9 +2,9 @@ import { DashboardPage } from './dashboard.po';
 import { browser, logging } from 'protractor';
 
 describe('Dashboard page', () => {
-  let page = new DashboardPage();
+  const page = new DashboardPage();
 
-  beforeAll(() => { 
+  beforeAll(() => {
     page.navigateToDashboardPage();
   });
 
@@ -24,7 +24,7 @@ describe('Dashboard page', () => {
 
 
   it('should navigate to category upon clicking card', () => {
-    
+
     page.getCard().click();
     expect(page.getPageCurrentUrl()).toContain('/category');
   });

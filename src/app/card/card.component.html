@@ -1,8 +1,8 @@
 <!--Cards to display news clippings-->
 <mat-card class="news-card">
     <mat-card-header>
-        <!--Bookmark artile-->
-        <div mat-card-avatar (click)='bookmarkArticle()' class="bookmark">
+        <!--Bookmark article-->
+        <div mat-card-avatar (click)='bookmarkArticle()' class="bookmark" matTooltip="Add to Bookmarks">
             <i class="material-icons">post_add</i>
         </div>
         <mat-card-title>{{news.title}}</mat-card-title>

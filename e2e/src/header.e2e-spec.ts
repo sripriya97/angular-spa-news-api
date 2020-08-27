@@ -2,9 +2,9 @@ import { browser, logging } from 'protractor';
 import { Header } from './header.po';
 
 describe('Dashboard page', () => {
-  let page = new Header();
+  const page = new Header();
 
- //bookmark icon
+  // bookmark icon
   it('should have bookmark icon', () => {
     expect(page.getBookmarkIcon().isPresent());
   });
@@ -14,7 +14,7 @@ describe('Dashboard page', () => {
     expect(page.getPageCurrentUrl()).toContain('/login');
   });
 
-  //login icon
+  // login icon
   it('should have login icon', () => {
     expect(page.getLoginIcon().isPresent());
   });
@@ -24,7 +24,7 @@ describe('Dashboard page', () => {
     expect(page.getPageCurrentUrl()).toContain('/login');
   });
 
-  //dashboard icon
+  // dashboard icon
   it('should have bookmark icon', () => {
     expect(page.getHomeIcon().isPresent());
   });

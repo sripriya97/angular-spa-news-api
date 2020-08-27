@@ -35,5 +35,8 @@
     <mat-card-actions class="full-width">
       <button mat-raised-button color="primary" type="submit">Submit</button>
     </mat-card-actions>
+
+    <!--Credential invalid message-->
+    <small *ngIf='credentialError'>Credentials are invalid, please enter valid credentials.</small>
   </mat-card>
 </form>

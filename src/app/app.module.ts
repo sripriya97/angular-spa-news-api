@@ -22,6 +22,8 @@ import { BookmarksComponent } from './bookmarks/bookmarks.component';
 import {MatInputModule} from '@angular/material/input';
 import { SearchNewsComponent } from './search-news/search-news.component';
 import { BookmarkCardComponent } from './bookmark-card/bookmark-card.component';
+import { FooterComponent } from './footer/footer.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { BookmarkCardComponent } from './bookmark-card/bookmark-card.component';
     CategoryNewsComponent,
     BookmarksComponent,
     SearchNewsComponent,
-    BookmarkCardComponent
+    BookmarkCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import { BookmarkCardComponent } from './bookmark-card/bookmark-card.component';
     MatCardModule,
     MatToolbarModule,
     HttpClientModule,
-    MatInputModule
+    MatInputModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

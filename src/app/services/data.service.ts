@@ -8,10 +8,10 @@ import { NewsService } from 'src/app/services/news.service';
 })
 export class DataService {
 
-  //to store bookmarked articles
+  // to store bookmarked articles
   public bookmarkedArticles = new BehaviorSubject<any>('');
 
-  //to store articles to be displayed
+  // to store articles to be displayed
   public displayArticles = new BehaviorSubject<any>('');
 
   constructor() {

@@ -9,44 +9,46 @@ import { AuthenticateService } from 'src/app/login-module/authenticate.service';
 })
 export class HeaderComponent implements OnInit {
 
-  loggedIn : boolean;
+  loggedIn: boolean;
   imageURL = 'assets/news.png';
   imageText = 'news icon';
+  keyword = '';
 
   constructor(private routerService: RoutingService, private authService: AuthenticateService) {
     this.loggedIn = this.authService.isAuthenticated();
-   }
+  }
   ngOnInit() { }
 
-  islogin(){
+  islogin() {
     return this.authService.isAuthenticated();
   }
 
   goToBookmarks() {
-    //go to bookmarks if already logged in, else to login page
+    // go to bookmarks if already logged in, else to login page
     if (this.authService.isAuthenticated()) {
       this.routerService.routeToBookmarks();
-    }
-    else {
+    } else {
       this.routerService.routeToLogin();
+      alert('Please login to view bookmarks');
     }
   }
   goToLogin() {
-    //route to login page 
+    // route to login page
     this.routerService.routeToLogin();
   }
   goToDashboard() {
-    //route to dashboard
+    // route to dashboard
     this.routerService.routeToDashboard();
   }
-  searchByKeyword(keyword) {
-    //search by keyword and go to search news
-    this.routerService.routeToSearchNews(keyword);
+  searchByKeyword() {
+    // search by keyword and go to search news
+    this.routerService.routeToSearchNews(this.keyword);
+    this.keyword = '';
   }
   logout() {
-    //logout
+    // logout
     this.authService.logout();
-    //route to dashboard
+    // route to dashboard
     this.routerService.routeToDashboard();
   }
 }

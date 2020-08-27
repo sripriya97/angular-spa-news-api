@@ -3,7 +3,7 @@
     <mat-card-header>
         <!--Delete article-->
         <div mat-card-avatar class="bookmark">
-            <i class="material-icons" (click)='removeFromBookmark(news)'>delete</i>
+            <i class="material-icons" matTooltip="Remove from Bookmarks" (click)='removeFromBookmark(news)'>delete</i>
         </div>
         <mat-card-title>{{news.title}}</mat-card-title>
         <mat-card-subtitle>{{news.author}}</mat-card-subtitle>

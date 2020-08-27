@@ -2,16 +2,17 @@
 <mat-toolbar color="primary">
     <img [src]='imageURL' [alt]="imageText">
     <!--Search Bar-->
-    <input matInput class="search" placeholder="Search " value="Search " #keyword>
-    <span class="material-icons" (click)='searchByKeyword(keyword.value)'>search</span>
+    <input matInput class="search" placeholder="Search" value="Search" [(ngModel)]="keyword">
+    <span class="material-icons" matTooltip="Search" (click)='searchByKeyword()'>search</span>
     <!--Icons for profile-->
     <div class="icons">
         <!--Go to Dashboard page-->
-        <i class="material-icons" name="home" (click)='goToDashboard()'>home</i>
+        <i class="material-icons" matTooltip="Go to Dashboard" name="home" (click)='goToDashboard()'>home</i>
         <!--Go to login page-->
-        <i class="material-icons" name="login" (click)='goToLogin()'>perm_identity</i>
+        <i class="material-icons" matTooltip="Go to Login" name="login" (click)='goToLogin()'>perm_identity</i>
         <!--Go to bookmarks page-->
-        <i class="material-icons" name="bookmark" (click)='goToBookmarks()'>bookmark</i>
+        <i class="material-icons" matTooltip="Go to Bookmark" name="bookmark" (click)='goToBookmarks()'>bookmark</i>
     </div>
+    <!--Logout-->
     <span class="logout" *ngIf='islogin()' (click)='logout()'>Logout</span>
 </mat-toolbar>
